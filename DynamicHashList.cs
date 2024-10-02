@@ -5,6 +5,11 @@ using System.Text.Json;
 using System.Text;
 
 namespace Collections.HashList;
+/// <summary>
+/// This Collection builds A Hash based on the JsonString of the Given Type.
+/// This can be a Lot slower than the HashList Class, but does not Require any changes to the classes.
+/// </summary>
+/// <typeparam name="T"></typeparam>
 internal class DynamicHashList<T> :IList<T>
 {
     private readonly Dictionary<int, T> _dictionary;

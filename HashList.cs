@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 
 namespace Collections.HashList;
-
+/// <summary>
+/// This Class is Based on the GetHashcode Methode of The given Class T.
+/// The Methode needs to be overwirdden if a uniquevalue Entrie can be found.
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class HashList<T> : IList<T>
 {
     private readonly Dictionary<int, T> _dictionary;
